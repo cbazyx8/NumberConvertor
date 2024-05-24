@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number System Converter</h1>
+        <div class="converter">
+            <label for="input-number">Enter Number:</label>
+            <input type="text" id="input-number" placeholder="Enter number here">
+            <label for="input-base">From Base:</label>
+            <select id="input-base">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <label for="output-base">To Base:</label>
+            <select id="output-base">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <button onclick="convertNumber()">Convert</button>
+            <div class="result">
+                <h2>Result:</h2>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Developed by <span>Wahab Khan</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
